@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.heading_Container {
+    /* border: 1px solid black; */
+    margin: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo_Heading {
+    display: flex;
+    padding: 0 10px;
+    margin-top: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    
+}
+
+.navBar {
+    display: flex;
+    padding: 0 10px;
+    margin-top: 15px;
+}
+
+section {
+    /* border: 1px solid black; */
+    margin: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.section_Container {
+    display: flex;
+    justify-content: center;
+}
+
+.center_Container {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Inside center container */
+.aboutme_Section {
+    /* border: 1px solid black; */
+}
+
+.aboutme_Container {
+    /* border: 1px solid black; */
+}
+
+.aboutme_Heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.coding_Section {
+    /* border: 1px solid black; */
+}
+
+.coding_Container {
+    /* border: 1px solid black; */
+}
+
+.coding_Heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+.socials_Section {
+    /* border: 1px solid black; */
+}
+
+.socials_Container {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px;
+    margin: 10px;
+}
+
+.resume_Section {
+    /* border: 1px solid black; */
+}
+
+.resume_Container {
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.resume_Link {
+
+}
+/* Inside center container */
+
+footer {
+    /* border: 1px solid black; */
+    margin: 10px;
+    padding: 10px;
+}
