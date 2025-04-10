@@ -1,135 +1,338 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-
+/* Light Mode Styles (Default) */
 * {
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for dark mode */
 }
 
 body {
-    font-family: "Poppins", system-ui;
+    font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-style: normal;
-    
-}
-
-::-webkit-scrollbar {
-    display: none;
-}
-
-.heading_Container {
-    /* border: 1px solid black; */
-    margin: 10px;
-    padding: 0;
+    min-height: 100vh;
     display: flex;
-    justify-content: space-between;
-}
-
-.logo_Heading {
-    display: flex;
-    padding: 0 10px;
-    margin-top: 15px;
-    justify-content: center;
-    align-items: center;
-}
-
-.logo {
-    display: flex;
-    
-}
-
-.navBar {
-    display: flex;
-    padding: 0 10px;
-    margin-top: 15px;
-}
-
-section {
-    /* border: 1px solid black; */
-    margin: 10px;
-    display: flex;
-    justify-content: space-around;
-}
-
-.section_Container {
-    display: flex;
-    justify-content: center;
-}
-
-.center_Container {
-    display: flex;
-    justify-content: space-between;
     flex-direction: column;
-    gap: 10px;
+    background-color: white;
+    color: #333;
 }
 
-/* Inside center container */
-.aboutme_Section {
-    /* border: 1px solid black; */
-}
-
-.aboutme_Container {
-    /* border: 1px solid black; */
-}
-
-.aboutme_Heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    padding: 5px;
-}
-
-.coding_Section {
-    /* border: 1px solid black; */
-}
-
-.coding_Container {
-    /* border: 1px solid black; */
-}
-
-.coding_Heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 5px;
-    padding: 5px;
-}
-
-.socials_Section {
-    /* border: 1px solid black; */
-}
-
-.socials_Container {
-    /* border: 1px solid black; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
-    margin: 10px;
-}
-
-.resume_Section {
-    /* border: 1px solid black; */
-}
-
-.resume_Container {
-    /* border: 1px solid black; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.topContainer {
     padding: 20px;
-    margin: 20px;
+    margin: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
 }
 
-.resume_Link {
-
+.name_Logo {
+    font-size: 1.5em;
+    color: #333;
 }
-/* Inside center container */
+
+.container_List {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.container_List li a {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 12px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.container_List li a:hover {
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+.centreContainer {
+    padding: 20px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    flex-grow: 1;
+    background-color: #f9f9f9;
+}
+
+.container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.container ul li {
+    margin-bottom: 30px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.aboutMe h1,
+.socials h1,
+.resume h1,
+.gitHub h1,
+.projects h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+.socials ul {
+    padding-left: 20px;
+}
+
+.socials ul li {
+    margin-bottom: 8px;
+    background: none;
+    padding: 0;
+    box-shadow: none;
+}
+
+.socials ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.socials ul li a:hover {
+    color: #0056b3;
+}
+
+.resume p,
+.gitHub p {
+    margin-bottom: 15px;
+}
+
+.resume a,
+.gitHub a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+}
+
+.resume a:hover,
+.gitHub a:hover {
+    background-color: #0056b3;
+}
+
+.projects h2 {
+    font-size: 1.5em;
+    margin-top: 20px;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.cardBox {
+    border: 1px solid #ddd;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    width: calc(33.33% - 20px);
+    min-width: 250px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cardBox h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.cardBox p {
+    margin-bottom: 15px;
+    color: #666;
+    font-size: 0.9em;
+}
+
+.imgBox {
+    width: 100%;
+    height: 150px;
+    background-color: #eee;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.imgBox img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cardBox a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #28a745;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.cardBox a:hover {
+    background-color: #1e7e34;
+}
 
 footer {
-    /* border: 1px solid black; */
-    margin: 10px;
-    padding: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #ccc;
+    background-color: #f0f0f0;
+    text-align: center;
+    color: #333;
+}
+
+footer h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+footer ul li p {
+    color: #555;
+}
+
+/* Dark Mode Styles */
+.dark-mode {
+    background-color: #121212;
+    color: #eee;
+}
+
+.dark-mode .topContainer {
+    border-bottom: 1px solid #333;
+}
+
+.dark-mode .name_Logo {
+    color: #eee;
+}
+
+.dark-mode .container_List li a {
+    color: #eee;
+    background-color: #222;
+}
+
+.dark-mode .container_List li a:hover {
+    background-color: #444;
+    color: #eee;
+}
+
+.dark-mode .centreContainer {
+    border: 1px solid #333;
+    background-color: #1a1a1a;
+}
+
+.dark-mode .container ul li {
+    background-color: #222;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .aboutMe h1,
+.dark-mode .socials h1,
+.dark-mode .resume h1,
+.dark-mode .gitHub h1,
+.dark-mode .projects h1 {
+    color: #eee;
+    border-bottom: 2px solid #555;
+}
+
+.dark-mode .projects h2 {
+    color: #ccc;
+}
+
+.dark-mode .cardBox {
+    border: 1px solid #555;
+    background-color: #222;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .cardBox h3 {
+    color: #eee;
+}
+
+.dark-mode .cardBox p {
+    color: #ccc;
+}
+
+.dark-mode .imgBox {
+    background-color: #444;
+}
+
+.dark-mode .cardBox a {
+    background-color: #388e3c;
+    color: #eee;
+}
+
+.dark-mode .cardBox a:hover {
+    background-color: #1b5e20;
+}
+
+.dark-mode footer {
+    border-top: 1px solid #333;
+    background-color: #121212;
+    color: #eee;
+}
+
+.dark-mode footer h2 {
+    color: #eee;
+}
+
+.dark-mode footer ul li p {
+    color: #ccc;
+}
+
+/* Dark Mode Toggle Button */
+#darkModeToggle {
+    /* position: fixed; */
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    background-color: #333;
+    color: #eee;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1000; /* Ensure it's on top of other elements */
+    transition: background-color 0.3s ease;
+}
+
+#darkModeToggle:hover {
+    background-color: #555;
+}
+
+.dark-mode #darkModeToggle {
+    background-color: #eee;
+    color: #333;
+}
+
+.dark-mode #darkModeToggle:hover {
+    background-color: #ccc;
 }
